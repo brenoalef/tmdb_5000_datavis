@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Visualização de Dados</a>
+
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4" style="color: #09b5e1">TMDB-5000</h1>
+                        
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <p>
+                                O TMDB-5000 é um conjunto de dados do 
+                                <a target="_blank" href="https://www.themoviedb.org/">The Movie Database (TMDB)</a> disponibilizado pelo <a target="_blank" href="https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/">Kaggle</a>. São 4804 filmes extraídos do TMDB e atualizados pela última vez em 2017, contando com aproximadamente 9MB. 
+                                </p>
+                                <p>
+                                Nesta visualização é possível explorar esses dados e verificar algumas questões sobre os filmes. Para objetivos de análise o conjunto de dados foi tratado, removendo 77 filmes que não tinham nenhuma nota, não haviam sido lançados na época ou não tinham dados de produtora, elenco ou equipe. Além disso, apenas as 5 primeiras entradas de elenco e equipe são consideradas.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        A avaliação média dos filmes tem aumentado ou diminuído ao longo dos anos?
+                                    </div>
+                                    <div id="observablehq-viewof-line_plot-bded2055" class="card-body"></div>
+                                    <div class="card-footer small text-muted">Clique e arraste para selecionar um período.</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Quais são os filmes mais bem avaliados?
+                                    </div>
+                                    <div id="observablehq-top_vote_average-bded2055" class="card-body"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Quais são os filmes mais caros?
+                                    </div>
+                                    <div id="observablehq-top_budget-bded2055" class="card-body"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-balance-scale me-1"></i>
+                                        Há relação entre a nota e o orçamento dos filmes?
+                                    </div>
+                                    <div id="observablehq-budget_by_vote_avg-bded2055" class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-tags me-1"></i>
+                                        Quais os temas mais recorrentes nos filmes segundo os usuários?
+                                    </div>
+                                    <div id="observablehq-wordcloud-bded2055" class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-sitemap me-1"></i>
+                                        Quais atores e funcionários mais importantes dos filmes do Top-10? Eles compartilham filmes?
+                                        <div id="observablehq-viewof-criterion-bded2055"></div>
+                                    </div>
+                                    <div id="observablehq-viewof-films_graph-bded2055" class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-none">
+                            <div id="observablehq-keywords-bded2055"></div>
+                            <div id="observablehq-DrawWordCloud-bded2055"></div>
+                            <div id="observablehq-d3Cloud-bded2055"></div>
+                            <div id="observablehq-key-bded2055"></div>
+                            <div id="observablehq-displayinfo-bded2055"></div>
+                            <div id="observablehq-colorGraph-bded2055"></div>
+                            <div id="observablehq-top_critetion-bded2055"></div>
+                            <div id="observablehq-radius-bded2055"></div>
+                            <div id="observablehq-top_graph-bded2055"></div>
+                            <div id="observablehq-brush-bded2055"></div>
+                            <div id="observablehq-signal-bded2055"></div>
+                            <div id="observablehq-movies_filtered-bded2055"></div>
+                            <div id="observablehq-full_graph-bded2055"></div>
+                            <div id="observablehq-movies2-bded2055"></div>
+                            <div id="observablehq-movies_converted-bded2055"></div>
+                        </div>                        
+                        <p>Notebook do Observable: <a href="https://observablehq.com/@breno2-ws/graficos-trabalho-final@1438">Gráficos - Trabalho Final by Breno&#039;s Workspace</a></p>
+
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                        <script type="module">
+                            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                            import define from "https://api.observablehq.com/@breno2-ws/graficos-trabalho-final@1520.js?v=4";
+                            new Runtime().module(define, name => {
+                              if (name === "viewof line_plot") return new Inspector(document.querySelector("#observablehq-viewof-line_plot-bded2055"));
+                              if (name === "top_vote_average") return new Inspector(document.querySelector("#observablehq-top_vote_average-bded2055"));
+                              if (name === "top_budget") return new Inspector(document.querySelector("#observablehq-top_budget-bded2055"));
+                              if (name === "budget_by_vote_avg") return new Inspector(document.querySelector("#observablehq-budget_by_vote_avg-bded2055"));
+                              if (name === "wordcloud") return new Inspector(document.querySelector("#observablehq-wordcloud-bded2055"));
+                              if (name === "keywords") return new Inspector(document.querySelector("#observablehq-keywords-bded2055"));
+                              if (name === "DrawWordCloud") return new Inspector(document.querySelector("#observablehq-DrawWordCloud-bded2055"));
+                              if (name === "d3Cloud") return new Inspector(document.querySelector("#observablehq-d3Cloud-bded2055"));
+                              if (name === "viewof criterion") return new Inspector(document.querySelector("#observablehq-viewof-criterion-bded2055"));
+                              if (name === "key") return new Inspector(document.querySelector("#observablehq-key-bded2055"));
+                              if (name === "viewof films_graph") return new Inspector(document.querySelector("#observablehq-viewof-films_graph-bded2055"));
+                              if (name === "displayinfo") return new Inspector(document.querySelector("#observablehq-displayinfo-bded2055"));
+                              if (name === "colorGraph") return new Inspector(document.querySelector("#observablehq-colorGraph-bded2055"));
+                              if (name === "top_critetion") return new Inspector(document.querySelector("#observablehq-top_critetion-bded2055"));
+                              if (name === "radius") return new Inspector(document.querySelector("#observablehq-radius-bded2055"));
+                              if (name === "top_graph") return new Inspector(document.querySelector("#observablehq-top_graph-bded2055"));
+                              if (name === "brush") return new Inspector(document.querySelector("#observablehq-brush-bded2055"));
+                              if (name === "signal") return new Inspector(document.querySelector("#observablehq-signal-bded2055"));
+                              if (name === "movies_filtered") return new Inspector(document.querySelector("#observablehq-movies_filtered-bded2055"));
+                              if (name === "full_graph") return new Inspector(document.querySelector("#observablehq-full_graph-bded2055"));
+                              if (name === "movies2") return new Inspector(document.querySelector("#observablehq-movies2-bded2055"));
+                              if (name === "movies_converted") return new Inspector(document.querySelector("#observablehq-movies_converted-bded2055"));
+                              return ["viewof min_vote_count"].includes(name);
+                            });
+                            setTimeout(() => window.dispatchEvent(new Event('resize')), 2000);
+                        </script> 
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
