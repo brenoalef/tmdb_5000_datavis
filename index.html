@@ -6,89 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>TMDB-5000 - Visualização de Dados</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed sb-sidenav-toggled">
+    <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Visualização de Dados</a>
+            <a class="ms-auto navbar-brand ps-3 me-3 me-lg-4" href="index.html">Visualização de Dados</a>
 
         </nav>
         <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
-                            </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
-                    </div>
-                </nav>
-            </div>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
@@ -113,7 +42,7 @@
                                         <i class="fas fa-chart-area me-1"></i>
                                         A avaliação média dos filmes tem aumentado ou diminuído ao longo dos anos?
                                     </div>
-                                    <div id="observablehq-viewof-line_plot-19494dcf" class="card-body d-flex justify-content-center"></div>
+                                    <div id="observablehq-viewof-line_plot-fda1ef9a" class="card-body d-flex justify-content-center"></div>
                                     <div class="card-footer small text-muted">Clique e arraste para selecionar um período.</div>
                                 </div>
                             </div>
@@ -126,28 +55,7 @@
                                         <i class="fas fa-balance-scale me-1"></i>
                                         Há relação entre a nota e o orçamento dos filmes?
                                     </div>
-                                    <div id="observablehq-viewof-budget_by_vote_avg-19494dcf" class="card-body d-flex justify-content-center"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar me-1"></i>
-                                        Quais são os filmes mais bem avaliados?
-                                    </div>
-                                    <div id="observablehq-viewof-top_vote_average-19494dcf" class="card-body"></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar me-1"></i>
-                                        Quais são os filmes mais caros?
-                                    </div>
-                                    <div id="observablehq-viewof-top_budget-19494dcf" class="card-body"></canvas></div>
+                                    <div id="observablehq-viewof-budget_by_vote_avg-fda1ef9a" class="card-body d-flex justify-content-center"></div>
                                 </div>
                             </div>
                         </div>
@@ -156,11 +64,10 @@
                             <div class="col-xl-12">
                                 <div class="card mb-4">
                                     <div class="card-header">
-                                        <i class="fas fa-sitemap me-1"></i>
-                                        Quais atores e funcionários mais importantes dos filmes do Top-10? Eles compartilham filmes?
-                                        <div id="observablehq-viewof-criterion-19494dcf"></div>
+                                        <i class="fas fa-calendar-days me-1"></i>
+                                        Em que época do ano os filmes foram lançados? O lançamento muda de acordo com o gênero principal?
                                     </div>
-                                    <div id="observablehq-viewof-films_graph-19494dcf" class="card-body"></div>
+                                    <div id="observablehq-viewof-heatmap-fda1ef9a" class="card-body d-flex justify-content-center"></div>
                                 </div>
                             </div>
                         </div>
@@ -172,69 +79,106 @@
                                         <i class="fas fa-tags me-1"></i>
                                         Quais os temas mais recorrentes nos filmes segundo os usuários?
                                     </div>
-                                    <div id="observablehq-wordcloud-19494dcf" class="card-body"></div>
+                                    <div id="observablehq-wordcloud-fda1ef9a" class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Quais são os filmes mais bem avaliados?
+                                    </div>
+                                    <div id="observablehq-viewof-top_vote_average-fda1ef9a" class="card-body"></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Quais são os filmes mais caros?
+                                    </div>
+                                    <div id="observablehq-viewof-top_budget-fda1ef9a" class="card-body"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-sitemap me-1"></i>
+                                        Quais atores e funcionários mais importantes dos filmes do Top-10? Eles compartilham filmes?
+                                        <div id="observablehq-viewof-criterion-fda1ef9a"></div>
+                                    </div>
+                                    <div id="observablehq-viewof-films_graph-fda1ef9a" class="card-body"></div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="d-none">
-                            <div id="observablehq-leastSquaresData-19494dcf"></div>
-                            <div id="observablehq-leastSquares-19494dcf"></div>
-                            <div id="observablehq-plotMovieBars-19494dcf"></div>
-                            <div id="observablehq-top_movie_vote_average-19494dcf"></div>
-                            <div id="observablehq-top_movie_budget-19494dcf"></div>
-                            <div id="observablehq-keywords-19494dcf"></div>
-                            <div id="observablehq-DrawWordCloud-19494dcf"></div>
-                            <div id="observablehq-key-19494dcf"></div>
-                            <div id="observablehq-displayinfo-19494dcf"></div>
-                            <div id="observablehq-colorGraph-19494dcf"></div>
-                            <div id="observablehq-top_critetion-19494dcf"></div>
-                            <div id="observablehq-radius-19494dcf"></div>
-                            <div id="observablehq-top_graph-19494dcf"></div>
-                            <div id="observablehq-brush-19494dcf"></div>
-                            <div id="observablehq-brush2-19494dcf"></div>
-                            <div id="observablehq-movies_filtered-19494dcf"></div>
-                            <div id="observablehq-full_graph-19494dcf"></div>
-                            <div id="observablehq-movies_converted-19494dcf"></div>
-                            <div id="observablehq-d3Cloud-19494dcf"></div>
-                            <div id="observablehq-dispatch-19494dcf"></div>
-                            <div id="observablehq-update-19494dcf"></div>
+                            <div id="observablehq-leastSquaresData-fda1ef9a"></div>
+                            <div id="observablehq-leastSquares-fda1ef9a"></div>
+                            <div id="observablehq-plotMovieBars-fda1ef9a"></div>
+                            <div id="observablehq-top_movie_vote_average-fda1ef9a"></div>
+                            <div id="observablehq-top_movie_budget-fda1ef9a"></div>
+                            <div id="observablehq-keywords-fda1ef9a"></div>
+                            <div id="observablehq-DrawWordCloud-fda1ef9a"></div>
+                            <div id="observablehq-displayinfo-fda1ef9a"></div>
+                            <div id="observablehq-colorGraph-fda1ef9a"></div>
+                            <div id="observablehq-top_critetion-fda1ef9a"></div>
+                            <div id="observablehq-radius-fda1ef9a"></div>
+                            <div id="observablehq-top_graph-fda1ef9a"></div>
+                            <div id="observablehq-brushLine-fda1ef9a"></div>
+                            <div id="observablehq-brushBins-fda1ef9a"></div>
+                            <div id="observablehq-selectHeat-fda1ef9a"></div>
+                            <div id="observablehq-movies_filtered_scatter-fda1ef9a"></div>
+                            <div id="observablehq-movies_filtered_line-fda1ef9a"></div>
+                            <div id="observablehq-full_graph-fda1ef9a"></div>
+                            <div id="observablehq-movies_converted-fda1ef9a"></div>
+                            <div id="observablehq-d3Cloud-fda1ef9a"></div>
+                            <div id="observablehq-dispatch-fda1ef9a"></div>
+                            <div id="observablehq-update-fda1ef9a"></div>
                         </div>                        
                         <p>Notebook do Observable: <a href="https://observablehq.com/@breno2-ws/graficos-trabalho-final@1857">Gráficos - Trabalho Final by Breno&#039;s Workspace</a></p>
 
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
                         <script type="module">
                             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-                            import define from "https://api.observablehq.com/@breno2-ws/graficos-trabalho-final@2089.js?v=4";
+                            import define from "https://api.observablehq.com/@breno2-ws/graficos-trabalho-final@2415.js?v=4";
                             new Runtime().module(define, name => {
-                              if (name === "viewof line_plot") return new Inspector(document.querySelector("#observablehq-viewof-line_plot-19494dcf"));
-                              if (name === "viewof budget_by_vote_avg") return new Inspector(document.querySelector("#observablehq-viewof-budget_by_vote_avg-19494dcf"));
-                              if (name === "leastSquaresData") return new Inspector(document.querySelector("#observablehq-leastSquaresData-19494dcf"));
-                              if (name === "leastSquares") return new Inspector(document.querySelector("#observablehq-leastSquares-19494dcf"));
-                              if (name === "viewof top_vote_average") return new Inspector(document.querySelector("#observablehq-viewof-top_vote_average-19494dcf"));
-                              if (name === "plotMovieBars") return new Inspector(document.querySelector("#observablehq-plotMovieBars-19494dcf"));
-                              if (name === "top_movie_vote_average") return new Inspector(document.querySelector("#observablehq-top_movie_vote_average-19494dcf"));
-                              if (name === "viewof top_budget") return new Inspector(document.querySelector("#observablehq-viewof-top_budget-19494dcf"));
-                              if (name === "top_movie_budget") return new Inspector(document.querySelector("#observablehq-top_movie_budget-19494dcf"));
-                              if (name === "wordcloud") return new Inspector(document.querySelector("#observablehq-wordcloud-19494dcf"));
-                              if (name === "keywords") return new Inspector(document.querySelector("#observablehq-keywords-19494dcf"));
-                              if (name === "DrawWordCloud") return new Inspector(document.querySelector("#observablehq-DrawWordCloud-19494dcf"));
-                              if (name === "viewof criterion") return new Inspector(document.querySelector("#observablehq-viewof-criterion-19494dcf"));
-                              if (name === "key") return new Inspector(document.querySelector("#observablehq-key-19494dcf"));
-                              if (name === "viewof films_graph") return new Inspector(document.querySelector("#observablehq-viewof-films_graph-19494dcf"));
-                              if (name === "displayinfo") return new Inspector(document.querySelector("#observablehq-displayinfo-19494dcf"));
-                              if (name === "colorGraph") return new Inspector(document.querySelector("#observablehq-colorGraph-19494dcf"));
-                              if (name === "top_critetion") return new Inspector(document.querySelector("#observablehq-top_critetion-19494dcf"));
-                              if (name === "radius") return new Inspector(document.querySelector("#observablehq-radius-19494dcf"));
-                              if (name === "top_graph") return new Inspector(document.querySelector("#observablehq-top_graph-19494dcf"));
-                              if (name === "brush") return new Inspector(document.querySelector("#observablehq-brush-19494dcf"));
-                              if (name === "brush2") return new Inspector(document.querySelector("#observablehq-brush2-19494dcf"));
-                              if (name === "movies_filtered") return new Inspector(document.querySelector("#observablehq-movies_filtered-19494dcf"));
-                              if (name === "full_graph") return new Inspector(document.querySelector("#observablehq-full_graph-19494dcf"));
-                              if (name === "movies_converted") return new Inspector(document.querySelector("#observablehq-movies_converted-19494dcf"));
-                              if (name === "d3Cloud") return new Inspector(document.querySelector("#observablehq-d3Cloud-19494dcf"));
-                              if (name === "dispatch") return new Inspector(document.querySelector("#observablehq-dispatch-19494dcf"));
-                              if (name === "update") return new Inspector(document.querySelector("#observablehq-update-19494dcf"));
+                              if (name === "viewof line_plot") return new Inspector(document.querySelector("#observablehq-viewof-line_plot-fda1ef9a"));
+                              if (name === "viewof budget_by_vote_avg") return new Inspector(document.querySelector("#observablehq-viewof-budget_by_vote_avg-fda1ef9a"));
+                              if (name === "leastSquaresData") return new Inspector(document.querySelector("#observablehq-leastSquaresData-fda1ef9a"));
+                              if (name === "leastSquares") return new Inspector(document.querySelector("#observablehq-leastSquares-fda1ef9a"));
+                              if (name === "viewof heatmap") return new Inspector(document.querySelector("#observablehq-viewof-heatmap-fda1ef9a"));
+                              if (name === "wordcloud") return new Inspector(document.querySelector("#observablehq-wordcloud-fda1ef9a"));
+                              if (name === "keywords") return new Inspector(document.querySelector("#observablehq-keywords-fda1ef9a"));
+                              if (name === "DrawWordCloud") return new Inspector(document.querySelector("#observablehq-DrawWordCloud-fda1ef9a"));
+                              if (name === "viewof top_vote_average") return new Inspector(document.querySelector("#observablehq-viewof-top_vote_average-fda1ef9a"));
+                              if (name === "plotMovieBars") return new Inspector(document.querySelector("#observablehq-plotMovieBars-fda1ef9a"));
+                              if (name === "top_movie_vote_average") return new Inspector(document.querySelector("#observablehq-top_movie_vote_average-fda1ef9a"));
+                              if (name === "viewof top_budget") return new Inspector(document.querySelector("#observablehq-viewof-top_budget-fda1ef9a"));
+                              if (name === "top_movie_budget") return new Inspector(document.querySelector("#observablehq-top_movie_budget-fda1ef9a"));
+                              if (name === "viewof criterion") return new Inspector(document.querySelector("#observablehq-viewof-criterion-fda1ef9a"));
+                              if (name === "viewof films_graph") return new Inspector(document.querySelector("#observablehq-viewof-films_graph-fda1ef9a"));
+                              if (name === "displayinfo") return new Inspector(document.querySelector("#observablehq-displayinfo-fda1ef9a"));
+                              if (name === "colorGraph") return new Inspector(document.querySelector("#observablehq-colorGraph-fda1ef9a"));
+                              if (name === "top_critetion") return new Inspector(document.querySelector("#observablehq-top_critetion-fda1ef9a"));
+                              if (name === "radius") return new Inspector(document.querySelector("#observablehq-radius-fda1ef9a"));
+                              if (name === "top_graph") return new Inspector(document.querySelector("#observablehq-top_graph-fda1ef9a"));
+                              if (name === "brushLine") return new Inspector(document.querySelector("#observablehq-brushLine-fda1ef9a"));
+                              if (name === "brushBins") return new Inspector(document.querySelector("#observablehq-brushBins-fda1ef9a"));
+                              if (name === "selectHeat") return new Inspector(document.querySelector("#observablehq-selectHeat-fda1ef9a"));
+                              if (name === "movies_filtered_scatter") return new Inspector(document.querySelector("#observablehq-movies_filtered_scatter-fda1ef9a"));
+                              if (name === "movies_filtered_line") return new Inspector(document.querySelector("#observablehq-movies_filtered_line-fda1ef9a"));
+                              if (name === "full_graph") return new Inspector(document.querySelector("#observablehq-full_graph-fda1ef9a"));
+                              if (name === "movies_converted") return new Inspector(document.querySelector("#observablehq-movies_converted-fda1ef9a"));
+                              if (name === "d3Cloud") return new Inspector(document.querySelector("#observablehq-d3Cloud-fda1ef9a"));
+                              if (name === "dispatch") return new Inspector(document.querySelector("#observablehq-dispatch-fda1ef9a"));
+                              if (name === "update") return new Inspector(document.querySelector("#observablehq-update-fda1ef9a"));
                               return ["viewof min_vote_count"].includes(name);
                             });
                         </script> 
@@ -243,9 +187,10 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Terms &amp; Conditions</a>
+                            <div class="text-muted">Visualização de Dados · 2023</div>
+                            <div class="nav-link">
+                                <a href="https://github.com/brenoalef/tmdb_5000_datavis">brenoalef</a>
+                                <i class="fas fa-brands fa-github me-1"></i> 
                             </div>
                         </div>
                     </div>
@@ -254,10 +199,5 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
     </body>
 </html>
