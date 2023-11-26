@@ -21,13 +21,13 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4" style="color: #1eb8d7">TMDB-5000</h1>
+                        <h1 class="mt-4" style="color: #45c0c5">TMDB-5000</h1>
                         
                         <div class="card mb-4">
                             <div class="card-body">
                                 <p>
                                 O TMDB-5000 é um conjunto de dados do 
-                                <a target="_blank" href="https://www.themoviedb.org/">The Movie Database (TMDB)</a> disponibilizado pelo <a target="_blank" href="https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/">Kaggle</a>. São 4804 filmes extraídos do TMDB e atualizados pela última vez em 2017, contando com aproximadamente 9MB. 
+                                <a target="_blank" href="https://www.themoviedb.org/">The Movie Database (TMDB)</a> disponibilizado pelo <a target="_blank" href="https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/">Kaggle</a>. São 4804 filmes extraídos do TMDB e atualizados pela última vez em 2017, contando com aproximadamente 45 MB. 
                                 </p>
                                 <p>
                                 Nesta visualização é possível explorar esses dados e verificar algumas questões sobre os filmes. Para objetivos de análise o conjunto de dados foi tratado, unindo os arquivos do Kaggle em uma única planilha e removendo 77 filmes que não tinham nenhuma nota, não haviam sido lançados na época que o dataset foi publicado ou não tinham dados de produtora, elenco ou equipe. Após o tratamento, o conjunto de dados conta com 4727 filmes. Além disso, apenas as 5 primeiras entradas de elenco e equipe são consideradas.
@@ -45,8 +45,8 @@
                                         <i class="fas fa-chart-area me-1"></i>
                                         A avaliação média dos filmes tem aumentado ou diminuído ao longo dos anos?
                                     </div>
-                                    <div id="observablehq-viewof-line_plot-f17141a1" class="card-body d-flex justify-content-center"></div>
-                                    <div class="card-footer small text-muted">Clique e arraste para selecionar intervalos horizontais.</div>
+                                    <div id="observablehq-viewof-line_plot-6870961e" class="card-body d-flex justify-content-center"></div>
+                                    <div class="card-footer small text-muted">A área em torno da linha de média indica os máximos e mínimos. Clique e arraste para selecionar intervalos horizontais na quantidade de avaliações e no lançamento.</div>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                                         <i class="fas fa-balance-scale me-1"></i>
                                         Há relação entre a nota e o orçamento dos filmes?
                                     </div>
-                                    <div id="observablehq-viewof-budget_by_vote_avg-f17141a1" class="card-body d-flex justify-content-center"></div>
+                                    <div id="observablehq-viewof-budget_by_vote_avg-6870961e" class="card-body d-flex justify-content-center"></div>
                                     <div class="card-footer small text-muted">Clique e arraste para selecionar regiões.</div>
                                 </div>
                             </div>
@@ -71,8 +71,8 @@
                                         <i class="fas fa-calendar-days me-1"></i>
                                         Filmes de um determinado gênero foram mais lançados em uma época específica do ano?
                                     </div>
-                                    <div id="observablehq-viewof-heatmap-f17141a1" class="card-body d-flex justify-content-center"></div>
-                                    <div class="card-footer small text-muted">Clique segurando a tecla <em>Shift</em> para selecionar combinações de mês e gênero.</div>
+                                    <div id="observablehq-viewof-heatmap-6870961e" class="card-body d-flex justify-content-center"></div>
+                                    <div class="card-footer small text-muted">Clique para selecionar uma combinação de mês e gênero. Utilize a tecla <em>Shift</em> para selecionar múltiplas combinações.</div>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                         <i class="fas fa-tags me-1"></i>
                                         Quais os temas mais recorrentes nos filmes segundo os usuários?
                                     </div>
-                                    <div id="observablehq-wordcloud-f17141a1" class="card-body"></div>
+                                    <div id="observablehq-wordcloud-6870961e" class="card-body"></div>
                                     <div class="card-footer small text-muted">Palavras-chave maiores (mais frequentes) detacadas com cores mais escuras.</div>
                                 </div>
                             </div>
@@ -97,8 +97,8 @@
                                         <i class="fas fa-chart-bar me-1"></i>
                                         Quais são os filmes mais bem avaliados?
                                     </div>
-                                    <div id="observablehq-viewof-top_vote_average-f17141a1" class="card-body"></div>
-                                    <div class="card-footer small text-muted">Clique em um filme para destacá-lo no outro gráfico de barras e no grafo se estiver presente.</div>
+                                    <div id="observablehq-viewof-top_vote_average-6870961e" class="card-body"></div>
+                                    <div class="card-footer small text-muted">Clique em um filme para destacá-lo no outro gráfico de barras e no grafo, se estiver presente.</div>
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -107,8 +107,8 @@
                                         <i class="fas fa-chart-bar me-1"></i>
                                         Quais são os filmes mais caros?
                                     </div>
-                                    <div id="observablehq-viewof-top_budget-f17141a1" class="card-body"></div>
-                                    <div class="card-footer small text-muted">Clique em um filme para destacá-lo no outro gráfico de barras e no grafo se estiver presente.</div>
+                                    <div id="observablehq-viewof-top_budget-6870961e" class="card-body"></div>
+                                    <div class="card-footer small text-muted">Clique em um filme para destacá-lo no outro gráfico de barras e no grafo, se estiver presente.</div>
                                 </div>
                             </div>
                         </div>
@@ -119,39 +119,39 @@
                                     <div class="card-header">
                                         <i class="fas fa-sitemap me-1"></i>
                                         Quais os atores e funcionários dos filmes do Top-10? Eles compartilham filmes?
-                                        <div id="observablehq-viewof-criterion-f17141a1"></div>
+                                        <div id="observablehq-viewof-criterion-6870961e"></div>
                                     </div>
-                                    <div id="observablehq-viewof-films_graph-f17141a1" class="card-body"></div>
-                                    <div class="card-footer small text-muted">Selecione um critério para exibir os dados do ranking correspondente. Clique em um nó de filme para destacá-lo nas barras se estiver presente.</div>
+                                    <div id="observablehq-viewof-films_graph-6870961e" class="card-body"></div>
+                                    <div class="card-footer small text-muted">Selecione um critério para exibir os dados do ranking correspondente. Clique em um nó de filme para destacá-lo nas barras, se estiver presente.</div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="d-none">
-                            <div id="observablehq-leastSquaresData-f17141a1"></div>
-                            <div id="observablehq-leastSquares-f17141a1"></div>
-                            <div id="observablehq-keywords-f17141a1"></div>
-                            <div id="observablehq-DrawWordCloud-f17141a1"></div>
-                            <div id="observablehq-plotMovieBars-f17141a1"></div>
-                            <div id="observablehq-top_movie_vote_average-f17141a1"></div>
-                            <div id="observablehq-top_movie_budget-f17141a1"></div>
-                            <div id="observablehq-d3Legend-f17141a1"></div>
-                            <div id="observablehq-colorGraph-f17141a1"></div>
-                            <div id="observablehq-top_critetion-f17141a1"></div>
-                            <div id="observablehq-radius-f17141a1"></div>
-                            <div id="observablehq-top_graph-f17141a1"></div>
-                            <div id="observablehq-brushLine-f17141a1"></div>
-                            <div id="observablehq-brushBins-f17141a1"></div>
-                            <div id="observablehq-brushScatter-f17141a1"></div>
-                            <div id="observablehq-selectHeat-f17141a1"></div>
-                            <div id="observablehq-movies_filtered_heat-f17141a1"></div>
-                            <div id="observablehq-movies_filtered_scatter-f17141a1"></div>
-                            <div id="observablehq-movies_filtered_line-f17141a1"></div>
-                            <div id="observablehq-full_graph-f17141a1"></div>
-                            <div id="observablehq-movies_converted-f17141a1"></div>
-                            <div id="observablehq-d3Cloud-f17141a1"></div>
-                            <div id="observablehq-dispatch-f17141a1"></div>
-                            <div id="observablehq-update-f17141a1"></div>
+                            <div id="observablehq-leastSquaresData-6870961e"></div>
+                            <div id="observablehq-leastSquares-6870961e"></div>
+                            <div id="observablehq-keywords-6870961e"></div>
+                            <div id="observablehq-DrawWordCloud-6870961e"></div>
+                            <div id="observablehq-plotMovieBars-6870961e"></div>
+                            <div id="observablehq-top_movie_vote_average-6870961e"></div>
+                            <div id="observablehq-top_movie_budget-6870961e"></div>
+                            <div id="observablehq-d3Legend-6870961e"></div>
+                            <div id="observablehq-colorGraph-6870961e"></div>
+                            <div id="observablehq-top_critetion-6870961e"></div>
+                            <div id="observablehq-radius-6870961e"></div>
+                            <div id="observablehq-top_graph-6870961e"></div>
+                            <div id="observablehq-brushLine-6870961e"></div>
+                            <div id="observablehq-brushBins-6870961e"></div>
+                            <div id="observablehq-brushScatter-6870961e"></div>
+                            <div id="observablehq-selectHeat-6870961e"></div>
+                            <div id="observablehq-movies_filtered_heat-6870961e"></div>
+                            <div id="observablehq-movies_filtered_scatter-6870961e"></div>
+                            <div id="observablehq-movies_filtered_line-6870961e"></div>
+                            <div id="observablehq-full_graph-6870961e"></div>
+                            <div id="observablehq-movies_converted-6870961e"></div>
+                            <div id="observablehq-d3Cloud-6870961e"></div>
+                            <div id="observablehq-dispatch-6870961e"></div>
+                            <div id="observablehq-update-6870961e"></div>
                         </div>
                                                 
                         <p>Notebook do Observable: <a href="https://observablehq.com/@breno2-ws/graficos-trabalho-final">Gráficos - Trabalho Final by Breno&#039;s Workspace</a></p>
@@ -159,40 +159,40 @@
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
                         <script type="module">
                             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-                            import define from "https://api.observablehq.com/@breno2-ws/graficos-trabalho-final.js?v=4";
+                            import define from "https://api.observablehq.com/@breno2-ws/graficos-trabalho-final@2786.js?v=4";
                             new Runtime().module(define, name => {
-                              if (name === "viewof line_plot") return new Inspector(document.querySelector("#observablehq-viewof-line_plot-f17141a1"));
-                              if (name === "viewof budget_by_vote_avg") return new Inspector(document.querySelector("#observablehq-viewof-budget_by_vote_avg-f17141a1"));
-                              if (name === "leastSquaresData") return new Inspector(document.querySelector("#observablehq-leastSquaresData-f17141a1"));
-                              if (name === "leastSquares") return new Inspector(document.querySelector("#observablehq-leastSquares-f17141a1"));
-                              if (name === "viewof heatmap") return new Inspector(document.querySelector("#observablehq-viewof-heatmap-f17141a1"));
-                              if (name === "wordcloud") return new Inspector(document.querySelector("#observablehq-wordcloud-f17141a1"));
-                              if (name === "keywords") return new Inspector(document.querySelector("#observablehq-keywords-f17141a1"));
-                              if (name === "DrawWordCloud") return new Inspector(document.querySelector("#observablehq-DrawWordCloud-f17141a1"));
-                              if (name === "viewof top_vote_average") return new Inspector(document.querySelector("#observablehq-viewof-top_vote_average-f17141a1"));
-                              if (name === "plotMovieBars") return new Inspector(document.querySelector("#observablehq-plotMovieBars-f17141a1"));
-                              if (name === "top_movie_vote_average") return new Inspector(document.querySelector("#observablehq-top_movie_vote_average-f17141a1"));
-                              if (name === "viewof top_budget") return new Inspector(document.querySelector("#observablehq-viewof-top_budget-f17141a1"));
-                              if (name === "top_movie_budget") return new Inspector(document.querySelector("#observablehq-top_movie_budget-f17141a1"));
-                              if (name === "viewof criterion") return new Inspector(document.querySelector("#observablehq-viewof-criterion-f17141a1"));
-                              if (name === "viewof films_graph") return new Inspector(document.querySelector("#observablehq-viewof-films_graph-f17141a1"));
-                              if (name === "d3Legend") return new Inspector(document.querySelector("#observablehq-d3Legend-f17141a1"));
-                              if (name === "colorGraph") return new Inspector(document.querySelector("#observablehq-colorGraph-f17141a1"));
-                              if (name === "top_critetion") return new Inspector(document.querySelector("#observablehq-top_critetion-f17141a1"));
-                              if (name === "radius") return new Inspector(document.querySelector("#observablehq-radius-f17141a1"));
-                              if (name === "top_graph") return new Inspector(document.querySelector("#observablehq-top_graph-f17141a1"));
-                              if (name === "brushLine") return new Inspector(document.querySelector("#observablehq-brushLine-f17141a1"));
-                              if (name === "brushBins") return new Inspector(document.querySelector("#observablehq-brushBins-f17141a1"));
-                              if (name === "brushScatter") return new Inspector(document.querySelector("#observablehq-brushScatter-f17141a1"));
-                              if (name === "selectHeat") return new Inspector(document.querySelector("#observablehq-selectHeat-f17141a1"));
-                              if (name === "movies_filtered_heat") return new Inspector(document.querySelector("#observablehq-movies_filtered_heat-f17141a1"));
-                              if (name === "movies_filtered_scatter") return new Inspector(document.querySelector("#observablehq-movies_filtered_scatter-f17141a1"));
-                              if (name === "movies_filtered_line") return new Inspector(document.querySelector("#observablehq-movies_filtered_line-f17141a1"));
-                              if (name === "full_graph") return new Inspector(document.querySelector("#observablehq-full_graph-f17141a1"));
-                              if (name === "movies_converted") return new Inspector(document.querySelector("#observablehq-movies_converted-f17141a1"));
-                              if (name === "d3Cloud") return new Inspector(document.querySelector("#observablehq-d3Cloud-f17141a1"));
-                              if (name === "dispatch") return new Inspector(document.querySelector("#observablehq-dispatch-f17141a1"));
-                              if (name === "update") return new Inspector(document.querySelector("#observablehq-update-f17141a1"));
+                              if (name === "viewof line_plot") return new Inspector(document.querySelector("#observablehq-viewof-line_plot-6870961e"));
+                              if (name === "viewof budget_by_vote_avg") return new Inspector(document.querySelector("#observablehq-viewof-budget_by_vote_avg-6870961e"));
+                              if (name === "leastSquaresData") return new Inspector(document.querySelector("#observablehq-leastSquaresData-6870961e"));
+                              if (name === "leastSquares") return new Inspector(document.querySelector("#observablehq-leastSquares-6870961e"));
+                              if (name === "viewof heatmap") return new Inspector(document.querySelector("#observablehq-viewof-heatmap-6870961e"));
+                              if (name === "wordcloud") return new Inspector(document.querySelector("#observablehq-wordcloud-6870961e"));
+                              if (name === "keywords") return new Inspector(document.querySelector("#observablehq-keywords-6870961e"));
+                              if (name === "DrawWordCloud") return new Inspector(document.querySelector("#observablehq-DrawWordCloud-6870961e"));
+                              if (name === "viewof top_vote_average") return new Inspector(document.querySelector("#observablehq-viewof-top_vote_average-6870961e"));
+                              if (name === "plotMovieBars") return new Inspector(document.querySelector("#observablehq-plotMovieBars-6870961e"));
+                              if (name === "top_movie_vote_average") return new Inspector(document.querySelector("#observablehq-top_movie_vote_average-6870961e"));
+                              if (name === "viewof top_budget") return new Inspector(document.querySelector("#observablehq-viewof-top_budget-6870961e"));
+                              if (name === "top_movie_budget") return new Inspector(document.querySelector("#observablehq-top_movie_budget-6870961e"));
+                              if (name === "viewof criterion") return new Inspector(document.querySelector("#observablehq-viewof-criterion-6870961e"));
+                              if (name === "viewof films_graph") return new Inspector(document.querySelector("#observablehq-viewof-films_graph-6870961e"));
+                              if (name === "d3Legend") return new Inspector(document.querySelector("#observablehq-d3Legend-6870961e"));
+                              if (name === "colorGraph") return new Inspector(document.querySelector("#observablehq-colorGraph-6870961e"));
+                              if (name === "top_critetion") return new Inspector(document.querySelector("#observablehq-top_critetion-6870961e"));
+                              if (name === "radius") return new Inspector(document.querySelector("#observablehq-radius-6870961e"));
+                              if (name === "top_graph") return new Inspector(document.querySelector("#observablehq-top_graph-6870961e"));
+                              if (name === "brushLine") return new Inspector(document.querySelector("#observablehq-brushLine-6870961e"));
+                              if (name === "brushBins") return new Inspector(document.querySelector("#observablehq-brushBins-6870961e"));
+                              if (name === "brushScatter") return new Inspector(document.querySelector("#observablehq-brushScatter-6870961e"));
+                              if (name === "selectHeat") return new Inspector(document.querySelector("#observablehq-selectHeat-6870961e"));
+                              if (name === "movies_filtered_heat") return new Inspector(document.querySelector("#observablehq-movies_filtered_heat-6870961e"));
+                              if (name === "movies_filtered_scatter") return new Inspector(document.querySelector("#observablehq-movies_filtered_scatter-6870961e"));
+                              if (name === "movies_filtered_line") return new Inspector(document.querySelector("#observablehq-movies_filtered_line-6870961e"));
+                              if (name === "full_graph") return new Inspector(document.querySelector("#observablehq-full_graph-6870961e"));
+                              if (name === "movies_converted") return new Inspector(document.querySelector("#observablehq-movies_converted-6870961e"));
+                              if (name === "d3Cloud") return new Inspector(document.querySelector("#observablehq-d3Cloud-6870961e"));
+                              if (name === "dispatch") return new Inspector(document.querySelector("#observablehq-dispatch-6870961e"));
+                              if (name === "update") return new Inspector(document.querySelector("#observablehq-update-6870961e"));
                             });
                         </script> 
                     </div>
@@ -211,6 +211,5 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
     </body>
 </html>
